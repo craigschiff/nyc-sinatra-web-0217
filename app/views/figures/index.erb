@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>All Figures Listed Below:</h2>
+    <% @figures.each do |figure| %>
+    <label>
+      Figure Name: <%= figure.name %>
+    </label>
+    <p>
+      Figure Link: <a href="/figures/<%= figure.id %>"
+    </p><br /><br />
+    <% end %>
+
+
+  </body>
+</html>
